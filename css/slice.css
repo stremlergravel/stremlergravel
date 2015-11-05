@@ -1,0 +1,276 @@
+.frameworkcontainer {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+
+.col {
+	margin: 4% 0 2% 0;
+	padding:0;
+	display: block;
+	float:left;
+
+}
+
+.col:first-of-type {
+	margin-top: 0;
+}
+
+section {
+	float: left;
+	display: inline-block;
+}
+
+.one,
+.two-even,
+.three-even,
+.four-even,
+.ten-ninety,
+.ninety-ten,
+.eighty-twenty,
+.twenty-eighty,
+.seventy-thirty,
+.thirty-seventy,
+.sixty-fourty,
+.fourty-sixty,
+.fifty-fifty {
+	width: 100%;
+	display: block;
+}
+
+/*---- even splits ----*/
+
+.one section{
+	width: 100%;
+}
+
+.two-even section,
+.fifty-fifty {
+  	width: 50%;
+}
+
+.three-even section{
+	width:33.33%;
+}
+
+.four-even section{
+	width:25%;
+}
+
+.five-even section{
+	width:20%;
+}
+
+.six-even section{
+	width:16.667%;
+}
+
+.seven-even section{
+	width:14.285%;
+}
+
+.eight-even section{
+	width:12.5%;
+}
+
+.nine-even section{
+	width:11.11%;
+}
+
+.ten-even section{
+	width:10%;
+}
+
+/*---- 10-90 & 90-10 ----*/
+
+.ten-ninety section:nth-child(1) {
+	width: 10%;
+}
+
+.ten-ninety section:nth-child(2) {
+	width: 90%;
+}
+
+.ninety-ten section:nth-child(1) {
+	width: 90%;
+}
+
+.ninety-ten section:nth-child(2) {
+	width: 10%;
+}
+
+/*---- 20-80 & 80-20 ----*/
+
+.eighty-twenty section:nth-child(1) {
+	width: 80%;
+}
+
+.eighty-twenty section:nth-child(2) {
+	width: 20%;
+}
+
+.twenty-eighty section:nth-child(1) {
+	width: 20%;
+}
+
+.twenty-eighty section:nth-child(2) {
+	width: 80%;
+}
+
+/*---- 30-70 & 70-30 ----*/
+
+.seventy-thirty section:nth-child(1) {
+	width: 70%;
+}
+
+.seventy-thirty section:nth-child(2) {
+	width: 30%;
+}
+
+.thirty-seventy section:nth-child(1) {
+	width: 30%;
+}
+
+.thirty-seventy section:nth-child(2) {
+	width: 70%;
+}
+
+/*---- 40-60 & 60-40 ----*/
+
+.sixty-fourty section:nth-child(1) {
+	width: 60%;
+}
+
+.sixty-fourty section:nth-child(2) {
+	width: 40%;
+}
+
+.fourty-sixty section:nth-child(1) {
+	width: 40%;
+}
+
+.fourty-sixty section:nth-child(2) {
+	width: 60%;
+}
+
+/* Tablet Devices - Portrait */
+
+@media screen and (max-width: 768px) {
+	.three-even section:nth-child(1),
+	.three-even section:nth-child(2){
+		width:50%;
+	}
+	.three-even section:nth-child(3){
+		width:100%;
+	}
+	.four-even section{
+		width:50%;
+	}
+	.five-even section:nth-child(1),
+	.five-even section:nth-child(2){
+		width:50%;
+	}
+	.five-even section:nth-child(3),
+	.five-even section:nth-child(4),
+	.five-even section:nth-child(5){
+		width:33.33%;
+	}
+	.six-even section{
+		width:33.33%;
+	}
+	.ten-ninety section:nth-child(1) {
+	width: 20%;
+	}
+	.ten-ninety section:nth-child(2) {
+	width: 80%;
+	}
+	.ninety-ten section:nth-child(1) {
+	width: 80%;
+	}
+	.ninety-ten section:nth-child(2) {
+	width: 20%;
+	}
+	.eighty-twenty section:nth-child(1) {
+	width: 70%;
+	}
+	.eighty-twenty section:nth-child(2) {
+	width: 30%;
+	}
+	.twenty-eighty section:nth-child(1) {
+	width: 30%;
+	}
+	.twenty-eighty section:nth-child(2) {
+	width: 70%;
+	}
+	.seventy-thirty section:nth-child(1) {
+	width: 60%;
+	}
+	.seventy-thirty section:nth-child(2) {
+	width: 40%;
+	}
+	.thirty-seventy section:nth-child(1) {
+	width: 40%;
+	}
+	.thirty-seventy section:nth-child(2) {
+	width: 60%;
+	}
+	.sixty-fourty section:nth-child(1) {
+	width: 50%;
+	}
+	.sixty-fourty section:nth-child(2) {
+	width: 50%;
+	}
+	.fourty-sixty section:nth-child(1) {
+	width: 50%;
+	}
+	.fourty-sixty section:nth-child(2) {
+	width: 50%;
+	}
+
+}
+
+
+
+
+
+
+/* Mobile Phones*/
+
+@media screen and (max-width: 480px) {
+	.two-even section,
+	.three-even section:nth-child(1),
+	.three-even section:nth-child(2),
+	.three-even section:nth-child(3),
+	.four-even section,
+	.five-even section:nth-child(1),
+	.five-even section:nth-child(2),
+	.five-even section:nth-child(3),
+	.five-even section:nth-child(4),
+	.five-even section:nth-child(5),
+	.six-even section,
+	.ten-ninety section:nth-child(1),
+	.ten-ninety section:nth-child(2), 
+	.ninety-ten section:nth-child(1), 
+	.ninety-ten section:nth-child(2), 
+	.eighty-twenty section:nth-child(1), 
+	.eighty-twenty section:nth-child(2), 
+	.twenty-eighty section:nth-child(1), 
+	.twenty-eighty section:nth-child(2), 
+	.seventy-thirty section:nth-child(1), 
+	.seventy-thirty section:nth-child(2) ,
+	.thirty-seventy section:nth-child(1) ,
+	.thirty-seventy section:nth-child(2), 
+	.sixty-fourty section:nth-child(1) ,
+	.sixty-fourty section:nth-child(2) ,
+	.fourty-sixty section:nth-child(1) ,
+	.fourty-sixty section:nth-child(2){
+		width:100%;
+	} 
+
+}
+
+
+
