@@ -3,6 +3,10 @@
 	dark grey: grey;
 */
 
+a img.logo {
+	visibility: hidden;
+	}
+
 body {
 	font-family: 'Lato', sans-serif;
 	overflow-x: hidden;
@@ -59,7 +63,66 @@ nav {
 	height: 100%;
 }
 
+/* ---------- Hamburger Nav --------------- */
 
+.mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+}
+.mobile div {
+  display: none;
+  margin: 2% 0;
+}
+.mobile button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border: 0;
+  text-indent: 200%;
+  overflow: hidden;
+  background: url("http://i.imgur.com/vKRaKDX.png") no-repeat center center ;
+  border-radius: none;
+  background-size: 90%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
+}
+.mobile button.expanded {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: transparent;
+  border: 0;
+}
+.mobile a {
+  display: block;
+}
+a {
+  padding: .5em 0;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+}
+
+.desktop {
+  display: inline-block;
+  width: 100%;
+}
+.desktop a {
+  float: left;
+}
+
+
+
+
+
+
+/* -------------------------------------------- */
 
 nav li {
 	display: inline-block;
@@ -542,6 +605,103 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+
+	nav {
+		background: none;
+	}
+
+	.nav {
+		background: #444;
+		height: 10%;
+	}
+
+
+
+
+	.mobile {
+    display: block;
+
+
+  }
+
+  .mobile div {
+  	position: absolute;
+  	top: 0;
+  	width: 100%;
+  	z-index: -99;
+  	margin-top: 0%;
+  }
+
+
+.mobile ul {
+	width: 100%;
+}
+
+a img.logo {
+	visibility: visible;
+	width: 40%;
+	z-index: 100;
+	position: relative;
+	margin: 3% 30% 0 30%;
+
+}
+
+.mobile div li:first-of-type {
+	padding-top: 19%;
+}
+
+.mobile div li:last-of-type {
+	padding-bottom: 5%;
+}
+
+.mobile li:first-of-type img {
+	width: 40%;
+}
+  .mobile li {
+    display: block;
+    width: 100%;
+    text-align: center;
+     background: #444;
+     padding: 0;
+     margin: 0;
+        
+  }
+
+  nav li:nth-child(4) {
+    width: 100%;
+}
+
+  .desktop {
+    display: none;
+  }
+
+
+	
+	#desktopnav {
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+
+
+
+
+	button#mobilemenu {
+		visibility: visible;
+		height: 1em;
+		width: 1em;
+		position: absolute;
+		top: 2.5%;
+		left: 2%;
+		background: rgb(255,255,255) url('https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png');
+	}
+
+
+	#mobilenav {
+		visibility: visible;
+		opacity: 0;
+
+	}
 
 	h2 {
 		font-size: 1.25em;
