@@ -68,6 +68,10 @@ nav li {
 	vertical-align: middle;
 }
 
+nav li:nth-child(4) {
+	width: 18%;
+}
+
 nav li a {
 	text-decoration: none;
 	color: #fff;
@@ -76,7 +80,7 @@ nav li a {
 }
 
 nav li a img {
-	width: 40%;
+	width: 100%;
 	display: block;
 	margin: 0 auto;
 	padding: 0;
@@ -87,13 +91,13 @@ section img {
 }
 
 .landing {
-	height:80vh;
+	height:90vh;
 	margin-left: 0;
 	background: url(../img/landingpage-1.png) no-repeat center center; 
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
@@ -134,10 +138,6 @@ section img {
 	background: #ddd;
 }
 
-.footer {
-	background: red;
-}
-
 .about section:nth-child(1) img{
 	width: 60%;
 	float: right;
@@ -165,7 +165,7 @@ section img {
 .calculator input:nth-child(2) {
 	height: 2.25em;
 	margin: 1% 1% 2% 0;
-	width: 48.8%;
+	width: 47%;
 	padding: 0;
 	vertical-align: top;
 	border: none;
@@ -180,6 +180,11 @@ section img {
 	border-bottom: 1px solid grey;
 	padding-bottom: 5%;
 	margin-bottom: 5%;
+}
+
+#depth {
+	width: 100%;
+	display: block;
 }
 
 .radio-custom {
@@ -224,7 +229,37 @@ section img {
     box-shadow: inset 0px 0px 0px 4px #fff;
 }
 
+.calcTitle {
+	color: #d42027;
+	margin-bottom: 0;
+}
 
+.submit {
+	background: #d42027;
+  color: #fff;
+  border: none;
+  padding: .4em 2.9em;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+#coverage {
+	margin: 0;
+	padding: 0;
+}
+
+.coverageh3 {
+	margin: 0;
+	width: 100%;
+	display: block;
+	padding: 0;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: 700}
 
 
 
@@ -234,11 +269,21 @@ section img {
 	margin-top: 7%;
 }
 
+.four-even section {
+    width: 24%;
+}
+
+.gallery-rock {
+	margin-right: 1%;
+}
+
 .gallery img {
-	width: 97%;
+	width: 100%;
 	display: block;
 	margin: 1.5% auto;
 }
+
+
 
 .gallery img:nth-child(1),
 .gallery img:nth-child(5) {
@@ -248,6 +293,74 @@ section img {
 .gallery img:nth-child(8) {
 	margin-right: 0;
 }
+
+.gallery-rock.a {
+	background: url(../img/gravel-4.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+
+.gallery-rock.b {
+	background: url(../img/gravel-2.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+
+.gallery-rock.c {
+	background: url(../img/gravel-3.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+
+.gallery-rock.d {
+	background: url(../img/gravel-4.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+.gallery-rock.e {
+	background: url(../img/gravel-1.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+.gallery-rock.f {
+	background: url(../img/gravel-7.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+.gallery-rock.g {
+	background: url(../img/gravel-6.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+.gallery-rock.h {
+	background: url(../img/gravel-8.1.jpg) no-repeat center center;
+	background-position: 0px 4px;
+	background-size:contain;
+}
+
+.gallery-rock h4 {
+	margin-top: 2%;
+}
+
+.gallery-rock img:hover {
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.imagecontainer {
+	width: 97%;
+	overflow: hidden;
+
+}
+
+.gallery .imagecontainer img{
+	height: 100%;
+
+	
+}
+
 
 .contact section:nth-child(1) div:nth-child(1) {
 	padding-left: 0;
@@ -264,13 +377,23 @@ section img {
 
 .contact section:nth-child(1) div img{
 	width: 80%;
-	margin: 0;
+	margin: 0% 0 0 0;
 	float: left;
-	padding-top: 40%;
+	padding-top: 20%;
 }
 
 .contact section:nth-child(1) h3 {
 	margin-bottom: 4%;
+	margin-top: 10%;
+	margin-left: 5%;
+}
+
+.contact section:nth-child(1) h5 {
+	margin-left: 5%;
+}
+
+.contact section:nth-child(1) h5:last-of-type {
+	margin-top: 5%;
 }
 
 
@@ -371,7 +494,201 @@ section img {
 	padding-top: 0;
 }
 
+.footer {
+	margin-bottom: 0;
+	background: #d42027;
+}
 
+.footer h6 {
+	padding: 0 0 0 5%;
+	margin: 2% 0;
+}
+ 
+.footer section:last-of-type  {
+	width: 45%;
+	text-align: right;
+	padding-right: 5%;
+}
+
+
+
+
+@media screen and (max-width: 1048px) { 
+
+	nav li a {
+		font-size: .9em;
+	}
+
+}
+
+@media screen and (max-width: 948px) { 
+
+	nav li a {
+		font-size: .8em;
+	}
+
+}
+
+@media screen and (max-width: 848px) { 
+
+	nav li {
+		margin: 4% 2% 0 2%;
+	}
+
+	nav li a {
+		font-size: .75em;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	h2 {
+		font-size: 1.25em;
+	}
+
+	h4 {
+		font-size: .8em;
+	}
+
+	h3 {
+		font-size: .9em;
+	}
+
+	#depth div {
+		margin-bottom: 0;
+	}
+
+	.calculator form {
+    border-bottom: none;
+     }
+
+     .contact form {
+     	margin-top: 10%;
+     }
+
+     .contact form input {
+     	margin-bottom: 2%;
+     }
+
+	.services {
+		width: 100%;
+	}
+	.services section:nth-child(1),
+	.services section:nth-child(2),
+	.services section:nth-child(3),
+	.services section:nth-child(4) {
+		width: 90%;
+		display: block;
+		margin: 2% -10% 0 -10%;
+	}
+
+	.services section img {
+		width: 50%;
+		float: left;
+		padding: 0 3% 0 2%;
+
+	}
+
+	.services section h3,
+	.services section p {
+		text-align: left;
+	}
+
+	.services section h3 {
+		margin-top: 5%;
+	}
+
+	.services section p {
+		margin-top: 2%;
+	}
+
+	.services h2 {
+		margin-left: -10%;
+	}
+
+	.about section:nth-child(1) img,
+	.calculator section:nth-child(1) img {
+		width: 85%;
+		float: left;
+		margin-left: 10%;
+	}
+
+	.contact section:nth-child(1) div {
+		width: 85%;
+		float: left;
+		margin-left: 10%;
+
+	}
+
+	.gallery,
+	.testimonials {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.testimonials h4 {
+		font-weight: 300;
+	}
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+	.services section:nth-child(1),
+	.services section:nth-child(2),
+	.services section:nth-child(3),
+	.services section:nth-child(4) {
+
+		margin-top: 4% ;
+	}
+
+	.services section img {
+		width: 100%;
+		float: left;
+		padding: 3% 0% 5% 0%;
+
+	}
+
+	.services section h3,
+	.services section p {
+		text-align: center;
+	}
+
+
+	.services section p {
+		margin-top: 2%;
+	}
+
+
+	.about img,
+	.calculator img {
+		display: none;
+	}
+
+	.about section:nth-child(2),
+	.calculator section:nth-child(2) {
+		width: 90%;
+		padding: 5% 5%;
+	}
+
+	.four-even section {
+    width: 49%;
+}
+
+.contact section:nth-child(1) div {
+    width: 100%;
+    float: left;
+    margin-left: 0%;
+}
+
+.contact section:nth-child(2) {
+	width: 95%;
+}
+
+}
 
 
 /*CLEARFIX*/

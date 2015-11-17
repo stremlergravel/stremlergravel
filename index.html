@@ -2,7 +2,7 @@
 <html lang="en">
 <head> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
-    <title>Slice | Awesome framework for awesome people!</title> 
+    <title>Stremler Gravel Inc. | Lynden, WA</title> 
     <!--Viewport Meta Tag--><meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Fonts--> <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     
@@ -21,7 +21,9 @@
             <nav>
                 <li><a href="">About</a></li>
                 <li><a href="">Services</a></li>
+                <li><a href="">Gravel Pit</a></li>
                 <li><a href=""><img src="img/gravellogo.png" alt=""></a></li>
+                <li><a href="">Calculator</a></li>
                 <li><a href="">Projects</a></li>
                 <li><a href="">Contact</a></li>
             </nav>
@@ -66,62 +68,77 @@
 
         <div class="col four-even gallery">
             <div class="title">
-                <h2>What's in the Gravel Pit?</h2>
+                <h2>Stremler's Gravel Pit</h2>
             </div>
-            <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+            <section class="gallery-rock a">
+                <img src="img/gravel-1.jpg" alt="">
+                <h4>gravel type</h4>
             </section>
-            <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+            <section class="gallery-rock b">
+                <img src="img/gravel-2.jpg" alt="">
+                <h4>gravel type</h4>
             </section>
-            <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+            <section class="gallery-rock c">
+                <img src="img/gravel-3.jpg" alt="">
+                <h4>gravel type</h4>
             </section>
-            <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+            <section class="gallery-rock d">
+                <img src="img/gravel-4.jpg" alt="">
+                <h4>gravel type</h4>
             </section>
-            <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+           <section class="gallery-rock e">
+                <img src="img/gravel-5.jpg" alt="">
+                <h4>gravel type</h4>
             </section>
-            <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+            <section class="gallery-rock f">
+                <img src="img/gravel-6.jpg" alt="">
+                <h4>gravel type</h4>
             </section>
-            <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+            <section class="gallery-rock g">
+                <img src="img/gravel-7.jpg" alt="">
+                <h4>gravel type</h4>
             </section>
-            <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+            <section class="gallery-rock h">
+                <img src="img/gravel-8.jpg" alt="">
+                <h4>gravel type</h4>
             </section>
         </div>
 
         <div class="col fourty-sixty calculator">
             <section>
-                <img src="img/landingpage-2.jpg" alt="">
+                <img src="img/landingpage-4.jpg" alt="">
             </section>
             <section>
-                <h2>How much gravel do i need?</h2>
+                <h2>Gravel Calculator</h2>
                 <h4>Our gravel coverage calculator will help you get an understanding of how much you will need to order. </h4>
-                <form action="">
-                    <input type="text" placeholder="length (feet)"><input type="text" placeholder="width (feet)"><br>
-                     <div>
-            <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked>
-            <label for="radio-1" class="radio-custom-label">Heavy Coverage</label>
-        </div>
-        <div>
-            <input id="radio-2" class="radio-custom"name="radio-group" type="radio">
-            <label for="radio-2" class="radio-custom-label">Moderate Coverage</label>
-        </div>
-        <div>
-            <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
-            <label for="radio-3" class="radio-custom-label">Light Coverage</label>
-        </div>
-<br>
-                    <button>Calculate</button>
-                </form>
+                <h4 class="calcTitle">Area Size:</h4>
+                <form>
 
-                <h4>Estimated Yards:</h4>
-                <h4>Estimated Tons:</h4>
-                <em>Please note this is an approximation, for an accurate estimate please contact us with more details about your project.</em>
+                    <input type="text" id="lengthFeet" placeholder="length (in feet)"></input>
+                    <input type="text" id="widthFeet" placeholder="width (in feet)"></input>
+                    
+                    <h4 class="calcTitle">Coverage:</h4>
+                    <div id="depth">
+                      <div>
+                         <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked>
+                         <label for="radio-1" class="radio-custom-label">Heavy (about 3")</label>
+                       </div>
+                       <div>
+                          <input id="radio-2" class="radio-custom"name="radio-group" type="radio">
+                          <label for="radio-2" class="radio-custom-label">Moderate (about 2")</label>
+                        </div>
+                        <div>
+                          <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+                          <label for="radio-3" class="radio-custom-label">Light (about 1")</label>
+                        </div>
+
+                    </div><!--depth-->
+
+
+                    <input type="button" value="Calculate" class="submit" onClick="calculateGravel()">
+
+                </form>
+                <h3 class="coverageh3">Estimated Cubic Yards: <div id="coverage"></div></h3>
             </section>
         </div>
 
@@ -132,28 +149,44 @@
                 <h2>Project Gallery</h2>
             </div>
             <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+                <div class="imagecontainer">
+                    <img src="img/projectgallery-1.jpg" class="cover">
+                </div>
             </section>
             <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+                <div class="imagecontainer">
+                    <img src="img/projectgallery-2.jpg" alt="">
+                </div>
             </section>
             <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+                <div class="imagecontainer">
+                    <img src="img/projectgallery-3.jpg" alt="">
+                </div>
             </section>
             <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+                <div class="imagecontainer">
+                    <img src="img/projectgallery-4.jpg" alt="">
+                </div>
             </section>
             <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+                <div class="imagecontainer">
+                    <img src="img/projectgallery-4.jpg" alt="">
+                </div>
             </section>
             <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+                <div class="imagecontainer">
+                    <img src="img/projectgallery-3.jpg" alt="">
+                </div>
             </section>
             <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+                <div class="imagecontainer">
+                    <img src="img/projectgallery-2.jpg" alt="">
+                </div>
             </section>
             <section>
-                <img src="img/gallery-placeholder.jpg" alt="">
+                <div class="imagecontainer">
+                    <img src="img/projectgallery-1.jpg" alt="">
+                </div>
             </section>
         </div>
 
@@ -231,7 +264,7 @@
                 <h6>© Stremler Gravel 2015 | All Rights Reserved</h6>
             </section>
             <section>
-                <h6>Designed and developed by Sara Weinand | saraweinand.com</h6>
+                <h6>Website by Sara Weinand | saraweinand.com</h6>
             </section>
         </div>
 
@@ -244,6 +277,7 @@
 
 	<!--scripts-->
 	<script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type='text/javascript' src='js/gravelCalculator.js'></script>
 	<script type='text/javascript' src='js/scripts.js'></script>
 
 </body>
