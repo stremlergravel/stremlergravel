@@ -153,6 +153,11 @@ section img {
 	width: 100%;
 }
 
+#menu li.active a {
+    border-bottom: 3px solid #333;
+    color: #333;
+}
+
 .landing {
 	height:95vh;
 	margin-left: 0;
@@ -169,12 +174,28 @@ section img {
 	margin: 0 15%;
 }
 
+.services {
+	position: relative;
+}
+
+.services td {
+	width: 33%;
+	vertical-align: top;
+
+}
+
+.services tr {
+	height: 100%;
+}
+
 .services section {
 	width: 31%;
 	margin: 0 1.1%;
 	background: grey;
 	color: #fff;
 	text-align: center;
+	min-height: 420px;
+
 }
 
 .services section:first-of-type {
@@ -194,6 +215,10 @@ section img {
 	margin: 0 auto;
 	font-size: .8em;
 	margin-bottom: 8%;
+}
+
+.services h3 {
+	margin-top: 5%;
 }
 
 .about, .contact,
@@ -542,29 +567,41 @@ h3 {
 	padding-left: 2%;
 }
 
+
+
 .testimonials section img {
 	width: 15%;
 	display: inline-block;
 	border-radius: 50%;
-	margin-top: 5%;
+	margin-top: 8%;
+	margin-bottom: -4%;
 }
 
 .testimonials section h4 {
 	width: 70%;
 	display: inline-block;
-	font-size: .8em;
+	font-size: .9em;
 	margin: 0% 0 5% 5% ;
 	padding-top: 0;
+	text-transform: none;
+	font-weight: 400;
 }
 
 .footer {
 	margin-bottom: 0;
 	background: #d42027;
+	color: #fff;
+	height: 4em;
 }
 
 .footer h6 {
 	padding: 0 0 0 5%;
-	margin: 2% 0;
+	margin: 4% 0;
+}
+
+.footer a {
+	color: #ddd;
+	padding-left: .5%;
 }
  
 .footer section:last-of-type  {
@@ -734,6 +771,12 @@ a img.logo {
 	.services {
 		width: 100%;
 	}
+
+	.services section {
+	min-height: 50px;
+
+}
+
 	.services section:nth-child(1),
 	.services section:nth-child(2),
 	.services section:nth-child(3),
