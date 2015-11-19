@@ -3,14 +3,36 @@
 	dark grey: grey;
 */
 
+
+
 a img.logo {
 	visibility: hidden;
 	}
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Proxima Nova', sans-serif;
+
 	overflow-x: hidden;
+	background: #fff;
 }
+
+.body_container {
+	background: #fff;
+
+}
+
+
+#video-background {
+/*  making the video fullscreen  */
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  width: 100%; 
+  height: auto;
+  z-index: -100;
+}
+
 
 h2 {
 	text-transform: uppercase;
@@ -55,12 +77,12 @@ em {
 
 nav {
 	text-align: center;
-	background: url(../img/nav-bg.png) no-repeat;
+	/*background: url(../img/nav-bg.png) no-repeat;
 	-webkit-background-size: cover;;
   -moz-background-size: cover;;
   -o-background-size: cover;;
   background-size: cover;
-	height: 100%;
+	height: 100%;*/
 }
 
 /* ---------- Hamburger Nav --------------- */
@@ -159,13 +181,75 @@ section img {
 }
 
 .landing {
-	height:95vh;
+	height:100vh;
 	margin-left: 0;
-	background: url(../img/landingpage-1.png) no-repeat center center; 
+	background: url(../img/darkoverlay-01.png) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.landing h1 {
+	color: #fff;
+	font-size: 2.5em;
+	text-align: left;
+	margin-top: -24%;
+	margin-left: 8%;
+	letter-spacing: .05em;
+	width: 40%;
+
+}
+
+.landing h6 {
+	color: #ddd;
+	font-size: 2em;
+	text-align: left;
+	margin-top: -1%;
+	margin-left: 8%;
+	letter-spacing: .05em;
+	font-weight: 400;
+	text-transform: uppercase;
+
+}
+
+.landing button {
+	background: #d42027;
+	border: none;
+	color: #fff;
+	display: inline-block;
+	margin-left: 1.5%;
+	padding: .75em 2em;
+	text-transform: uppercase;
+	font-size: .8em;
+	font-weight: 300;
+	margin-top: -2%;
+
+
+}
+
+.landing button:first-of-type {
+	background: none;
+	border: 2px solid #fff;
+	margin-left: 8%;
+	padding: .6em 1.8em;
+}
+
+.landing button a {
+
+	color: #fff;
+
+}
+
+.landing button:hover {
+	background: #ddd;
+	border: 2px solid #ddd;
+	color: #000;
+}
+
+.landing button:last-of-type:hover {
+	background: #ddd;
+	border: none;
 }
 
 
@@ -174,18 +258,9 @@ section img {
 	margin: 0 15%;
 }
 
+
 .services {
-	position: relative;
-}
-
-.services td {
-	width: 33%;
-	vertical-align: top;
-
-}
-
-.services tr {
-	height: 100%;
+	padding-top: 1%;
 }
 
 .services section {
@@ -194,7 +269,7 @@ section img {
 	background: grey;
 	color: #fff;
 	text-align: center;
-	min-height: 420px;
+	min-height: 440px;
 
 }
 
@@ -215,10 +290,12 @@ section img {
 	margin: 0 auto;
 	font-size: .8em;
 	margin-bottom: 8%;
+	font-weight: 100;
 }
 
 .services h3 {
 	margin-top: 5%;
+	margin-bottom: 3%;
 }
 
 .about, .contact,
@@ -252,7 +329,7 @@ section img {
 .calculator input:nth-child(1),
 .calculator input:nth-child(2) {
 	height: 2.25em;
-	margin: 1% 1% 2% 0;
+	margin: 1% 1% 0% 0;
 	width: 47%;
 	padding: 0;
 	vertical-align: top;
