@@ -33,7 +33,7 @@
             </nav>
 
             <div class="menu-bg"></div>
-<div class="menu-burger">&#8801;</div>
+<div class="menu-burger"><img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" alt=""></div>
 <div class="mobile-logo"><img src="img/gravellogo.png" alt=""></div>
 <div class="menu-items">
   <div><a href="#about">About</a></div>
@@ -92,37 +92,45 @@
             <div class="title">
                 <h2>Stremler's Gravel Pit</h2>
             </div>
-            <section class="gallery-rock a">
-                <img src="img/gravel-1.jpg" alt="">
-                <h4>Washed Stone</h4>
+            <section class="gallery-rock a ">
+                <div class="image_container"><img src="img/gravel-1.jpg" alt=""><img src="img/gravel-1.1.jpg" alt="">
+                </div>
+                <h4 class="rocktitle">Washed Stone</h4>
             </section>
-            <section class="gallery-rock b">
-                <img src="img/gravel-2.jpg" alt="">
-                <h4>River Pebbles</h4>
+            <section class="gallery-rock a ">
+                <div class="image_container"><img src="img/gravel-1.jpg" alt=""><img src="img/gravel-1.1.jpg" alt="">
+                </div>
+                <h4 class="rocktitle">Washed Stone</h4>
             </section>
-            <section class="gallery-rock c">
-                <img src="img/gravel-3.jpg" alt="">
-                <h4>gravel type</h4>
+            <section class="gallery-rock a ">
+                <div class="image_container"><img src="img/gravel-1.jpg" alt=""><img src="img/gravel-1.1.jpg" alt="">
+                </div>
+                <h4 class="rocktitle">Washed Stone</h4>
             </section>
-            <section class="gallery-rock d">
-                <img src="img/gravel-4.jpg" alt="">
-                <h4>Washed Natural Stone</h4>
+            <section class="gallery-rock a ">
+                <div class="image_container"><img src="img/gravel-1.jpg" alt=""><img src="img/gravel-1.1.jpg" alt="">
+                </div>
+                <h4 class="rocktitle">Washed Stone</h4>
             </section>
-           <section class="gallery-rock e">
-                <img src="img/gravel-5.jpg" alt="">
-                <h4>Crushed Granite Gravel </h4>
+            <section class="gallery-rock a ">
+                <div class="image_container"><img src="img/gravel-1.jpg" alt=""><img src="img/gravel-1.1.jpg" alt="">
+                </div>
+                <h4 class="rocktitle">Washed Stone</h4>
             </section>
-            <section class="gallery-rock f">
-                <img src="img/gravel-6.jpg" alt="">
-                <h4>gravel type</h4>
+            <section class="gallery-rock a ">
+                <div class="image_container"><img src="img/gravel-1.jpg" alt=""><img src="img/gravel-1.1.jpg" alt="">
+                </div>
+                <h4 class="rocktitle">Washed Stone</h4>
             </section>
-            <section class="gallery-rock g">
-                <img src="img/gravel-7.jpg" alt="">
-                <h4>Quartzite Gravel</h4>
+            <section class="gallery-rock a ">
+                <div class="image_container"><img src="img/gravel-1.jpg" alt=""><img src="img/gravel-1.1.jpg" alt="">
+                </div>
+                <h4 class="rocktitle">Washed Stone</h4>
             </section>
-            <section class="gallery-rock h">
-                <img src="img/gravel-8.jpg" alt="">
-                <h4>Pea Gravel</h4>
+            <section class="gallery-rock a ">
+                <div class="image_container"><img src="img/gravel-1.jpg" alt=""><img src="img/gravel-1.1.jpg" alt="">
+                </div>
+                <h4 class="rocktitle">Washed Stone</h4>
             </section>
         </div>
 
@@ -138,29 +146,13 @@
 
                     <input type="text" id="lengthFeet" placeholder="length (in feet)"></input>
                     <input type="text" id="widthFeet" placeholder="width (in feet)"></input>
-                    
-                    <h4 class="calcTitle">Coverage:</h4>
-                    <div id="depth">
-                      <div>
-                         <input id="radio-1" class="radio-custom" name="radio-group" type="radio" checked>
-                         <label for="radio-1" class="radio-custom-label">Heavy (about 3")</label>
-                       </div>
-                       <div>
-                          <input id="radio-2" class="radio-custom"name="radio-group" type="radio">
-                          <label for="radio-2" class="radio-custom-label">Moderate (about 2")</label>
-                        </div>
-                        <div>
-                          <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
-                          <label for="radio-3" class="radio-custom-label">Light (about 1")</label>
-                        </div>
-
-                    </div><!--depth-->
+                    <input type="text" id="depthInches" placeholder="depth (in inches)"></input>
 
 
                     <input type="button" value="Calculate" class="submit" onClick="calculateGravel()">
 
                 </form>
-                <h3 class="coverageh3">Estimated Cubic Yards: <div id="coverage"></div></h3>
+                <h3 class="coverageh3">Estimated Tons Required: <div id="coverage"></div></h3>
             </section>
         </div>
 

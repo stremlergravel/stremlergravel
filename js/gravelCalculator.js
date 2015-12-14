@@ -9,32 +9,22 @@ function calculateGravel(){  //define function
 // 1: get length and width from user in feet
 var lengthFeet = document.getElementById('lengthFeet').value;
 var widthFeet = document.getElementById('widthFeet').value;
+var depthInches = document.getElementById('depthInches').value;
 
   
 // 2: convert length and width to yards
 var lengthYards = lengthFeet * 0.3333333;
 var widthYards = widthFeet * 0.3333333;
+var depthYards = depthInches * 0.0277778;
 
   
 // 3: multiply length and width to get area
-var areaYards = lengthYards * widthYards;
-
-// 4a: radio button variables
-var depth;
-if (document.getElementById('radio-1').checked) {
-  depth = 0.0833333;
-}else if (document.getElementById('radio-2').checked) {
-  depth = 0.0555556;
-}else if (document.getElementById('radio-3').checked) {
-  depth = 0.0277778;
-}
-  
-// 4b: take area and multiply by coverage
-var cubicYards = areaYards * depth;
+var cubicYards = lengthYards * widthYards * depthYards;
   
 
   
-// 5: output cubic yards
+// 4: output cubic yards
+var requiredTons = cubicYards * 2;
 
 // Create a variable called el to hold the element whose id attribute has a value of footer
 var el = document.getElementById('coverage');
